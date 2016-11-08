@@ -28,9 +28,14 @@ form {
 <form>
   <label><input type="radio" name="mode" value="price" checked> Price</label>
   <label><input type="radio" name="mode" value="count"> Count</label>
+
+
 </form>
+
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
+
+
 
 var margin = {top: 40, right: 10, bottom: 10, left: 10},
     width = 960 - margin.left - margin.right,
@@ -50,29 +55,62 @@ var div = d3.select("body").append("div")
     .style("left", margin.left + "px")
     .style("top", margin.top + "px");
 
-d3.json("2016.10.01.json", function(error, root) {
+
+
+
+d3.json("d3_2016.11.01.json", function(error, root) {
   if (error) throw error;
+
+
+/**
+
+*var object = JSON.stringify(root);
+
+*document.body.innerHTML = object;
+
+*document.write(root);
+
+*/
+
+
+var pri = getValues(root,'price');
+document.getElementById("hello").innerHTML = pri;
+
+console.log('Total Prices: ',getValues(root,'price'));
+
+
+
 
   var node = div.datum(root).selectAll(".node")
       .data(treemap.nodes)
-    .enter().append("div")
+      .enter().append("div")
       .attr("class", "node")
       .call(position)
       .style("background", function(d) { return d.children ? color(d.name) : null; })
       .text(function(d) { return d.children ? null : d.name; });
 
+	
   d3.selectAll("input").on("change", function change() {
     var value = this.value === "count"
         ? function(d) { return d.count; }
         : function(d) { return d.price; };
 
+
     node
         .data(treemap.value(value).nodes)
-      .transition()
+        .transition()
         .duration(1500)
         .call(position);
+
+
+//document.write('Total Prices: ',getValues(root,'price'));
+
+
+
   });
 });
+
+
 
 function position() {
   this.style("left", function(d) { return d.x + "px"; })
@@ -81,4 +119,30 @@ function position() {
       .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
 }
 
+
+
+function getValues(obj, key) {
+    var objects = 0;
+    for (var i in obj) {
+        if (!obj.hasOwnProperty(i)) continue;
+        if (typeof obj[i] == 'object') {
+            objects = objects+(getValues(obj[i], key));
+        } else if (i == key) {
+            objects+=(obj[i]);
+        }
+    }
+    return objects;
+}
+
+
+
 </script>
+
+<b> Total Price: </b>
+<i id="hello"> Total price will be shown here. </i>
+
+<!--
+<text x="20" y="20" font-family="sans-serif" font-size="20px" fill="red"> Total Price: <script> document.write('Total Prices: ',getValues(root,'price'));</script></text>
+ <script> document.getElementById("hello").innerHTML = 6+7; </script> <p>.</p>
+var out = getValues(root,'price');
+-->
