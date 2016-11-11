@@ -6,7 +6,7 @@ Generic treemap, based on http://bost.ocks.org/mike/treemap/
 <html>
 <head>
 <meta charset="utf-8">
-<title>Zoomable treemap template</title>
+<title>Snapdeal Product categories Visualization</title>
 <style>
 
 #chart {
@@ -330,7 +330,7 @@ if (window.location.hash === "") {
         if (!err) {
             console.log(res);
             var data = d3.nest().key(function(d) { return d.region; }).key(function(d) { return d.subregion; }).entries(res);
-            main({title: "Product categories follows by price"}, {key: "root", values: data});
+            main({title: "Snapdeal Product categories follows by price"}, {key: "root", values: data});
         }
     });
 }
@@ -338,4 +338,3 @@ if (window.location.hash === "") {
 </script>
 </body>
 </html>
-
