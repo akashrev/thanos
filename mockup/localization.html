@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reverie Language Technology</title>
+
+        <link rel="stylesheet" type="text/css" href="localization_styles.css" />
+    </head>
+
+
+    <body>
+        <div class="tagline">
+            <h2> Reverie Assisted Localization</h2>
+
+            <p>
+                Send your customers messages in a language they understand. <br/>
+                At no extra effort. And we will manage this for you forever.
+            </p>
+        </div>
+
+        <div class = "services">
+            <ul>
+                <li> Localize messages sent thousands of times, with minor variations in the names of people, places,
+                    brands, amounts, numbers and URLs.</li>
+                <li>Supports localization from English to 12 Indian languages, with human oversight and near
+                    100% accuracy. </li>
+                <li> Recognizes and leaves untouched URLs, Coupon/Product codes, etc. </li>
+                <li> Pre built templates for A2P (promotional and transactional messages). </li>
+                <li> Upload your own often repeated strings once for templatization - we manage these and detect
+                    and update new once automatically.</li>
+                <li>Support for custom strings of 250 chars each, with a 10% addition every month, with a
+                    max 2000 templates.</li>
+            </ul>
+        </div>
+
+
+        <div class="try">
+            <h3> Try out Assisted Localization for yourself </h3>
+
+            <div class="block">
+
+            <nav class="vertical">
+
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" id="outer">A2P Messages</a>
+                        <ul id="inner">
+                            <li>
+                            <a href="#">Dear Ramesh, Free service camp for all TATA vehicles at CONCORDE motors,
+                                Hosur Road this Dec 10-11!</a>
+                            </li>
+                            <li>
+                            <a href="#">An amount of Rs.10.20 has been deducted from your account number xx0898
+                                for NEFT txn done using Federal Bank Netbanking</a>
+                            </li>
+                            <li>
+                            <a href="#">All footwear on min 40% off at Mochi across all stores in Bangalore.
+                                An additional 10% off at Mochi.com</a>
+                            </li>
+                            <li>
+                            <a href="#"> Buy product worth ₹.5000 or more and get 15% back using American Express Cards
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#">Buy one get one free Pizza! At all Dominoes Bangalore outlets. Starting 199/-
+                                T&C Apply</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="outer">A2P Messages</a>
+                        <ul id="inner">
+                            <li>
+                            <a href="#">Dear Ramesh, Free service camp for all TATA vehicles at CONCORDE motors,
+                                Hosur Road this Dec 10-11!</a>
+                            </li>
+                            <li>
+                            <a href="#">An amount of Rs.10.20 has been deducted from your account number xx0898
+                                for NEFT txn done using Federal Bank Netbanking</a>
+                            </li>
+                            <li>
+                            <a href="#">All footwear on min 40% off at Mochi across all stores in Bangalore.
+                                An additional 10% off at Mochi.com</a>
+                            </li>
+                            <li>
+                            <a href="#"> Buy product worth ₹.5000 or more and get 15% back using American Express Cards
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#">Buy one get one free Pizza! At all Dominoes Bangalore outlets. Starting 199/-
+                                T&C Apply</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="outer">A2P Messages</a>
+                        <ul id="inner">
+                            <li>
+                            <a href="#">Dear Ramesh, Free service camp for all TATA vehicles at CONCORDE motors,
+                                Hosur Road this Dec 10-11!</a>
+                            </li>
+                            <li>
+                            <a href="#">An amount of Rs.10.20 has been deducted from your account number xx0898
+                                for NEFT txn done using Federal Bank Netbanking</a>
+                            </li>
+                            <li>
+                            <a href="#">All footwear on min 40% off at Mochi across all stores in Bangalore.
+                                An additional 10% off at Mochi.com</a>
+                            </li>
+                            <li>
+                            <a href="#"> Buy product worth ₹.5000 or more and get 15% back using American Express Cards
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#">Buy one get one free Pizza! At all Dominoes Bangalore outlets. Starting 199/-
+                                T&C Apply</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+
+            <div id="block_right">
+
+            </div>
+
+            <div id="block_left_p">
+                <p>
+                    You pass the above strings in the API call.<br />
+                    You can also upload a .csv file with unique strings that we automatically convert to
+                    custom templates fro your API calls.
+                </p>
+            </div>
+            <div id="block_right_p">
+                <p>
+                    The first call with a new kind of string is handled through our automated template creation
+                    and machine translation, after which the localization is human verified to ensure 100%
+                    accuracy.
+                </p>
+            </div>
+
+            <div id="io_box">
+
+                <form action="" method="get" >
+
+                    <input placeholder="Enter String" type="text" class="paste" name="search" id="string" value="" />
+                        <div id="quote">
+                            (The string you pass is matched against a template, or we generate a new one)
+                        </div>
+                    <br/>
+                    <div class="language_button">
+                        <select name = "language" id="soflow" >
+                            <option value="hindi">Hindi</option>
+                            <option value="assamese">Assamese</option>
+                            <option value="bengali">Bengali</option>
+                            <option value="gujarati">Gujarati</option>
+                            <option value="kannada">Kannada</option>
+                            <option value="malayalam">Malayalam</option>
+                            <option value="marathi">Marathi</option>
+                            <option value="odia">Odia</option>
+                            <option value="punjabi">Punjabi</option>
+                            <option value="tamil">Tamil</option>
+                            <option value="telugu">Telugu</option>
+
+                        </select>
+                    </div>
+
+                    <div class="category_button">
+                        <select name = "category"  id="soflow">
+                            <option value="a2p">A2P Messages</option>
+                            <option value="festive">Festive</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+
+                    <input type="button" value="Try it!" name="tryit" class="try">
+                </form>
+                <br />
+                <div class="output_block">
+                    <div id="blue"><b>
+                    The Localized String the API will return :
+                    </b>
+                    </div>
+                <input placeholder="Output will display here" type="text" name="output" id="string" value="" />
+
+
+                </div>
+
+                <div id="output">
+                    <!-- print output here -->
+                </div>
+                <br />
+                <div id="feedback">
+                <p id="rate">
+                    Rate It:
+                </p>
+                <img src="star.jpg" height="30" width="150" />
+
+                    <input placeholder="Please leave us comments, suggestions, ideas" type="text" name="output" id="comment" value="" />
+                    <input type="submit" value ="Let us know" name="know" id="letus">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="user_block">
+        <h4>
+            To Try It For Your Own Custom Strings (upto 5) upload a csv with unique strings, and leave us your info.
+            We'll revert before 48 hours :
+        </h4>
+            <div class = "user_form">
+                <form action="" method="get" >
+                    <div id="udetail">
+                        <input placeholder="Your name" type="text" name="search" id="search" value="" /> <br/>
+                        <input placeholder="Email Id" type="text" name="search" id="search" value="" /> <br/>
+                        <input placeholder="Contact Number" type="text" name="search" id="search" value="" /> <br/>
+                        <input placeholder="Organization Name" type="text" name="search" id="search" value="" />
+                    </div>
+
+                    <div class="usage">
+                        <select name = "usage" id="soflow">
+                            <option value="usage">Usage Need</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div><br/>
+                    <div class="domain">
+                        <select name = "domain" id="soflow">
+                            <option value="domain">Domain</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <input placeholder="Select csv file from your computer" type="text" name="upload" id="upload" value="" />
+
+                    <input type="file" name="csv" accept=".csv" id="upload1">
+                    <input type="submit" value ="Submit" name="submit" id="fsubmit">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <p>The Assisted Localization API for the above :</p>
+            <textarea name="Text1" cols="70" rows="5"></textarea>
+            <a href="#">
+                <input type="button" name="postman" id="postman" value="Try on Postman" />
+            </a>
+            <br/>
+            <a href="#">
+                <input type="button" name="signup" id="signup" value="Signup and Try! " />
+            </a>
+        </div>
+
+    </body>
+</html>
+

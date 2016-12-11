@@ -1,0 +1,272 @@
+body{
+    margin:25px;
+    width:60%;
+    font-family: 'Noto Sans', sans-serif;
+    }
+
+a{
+text-decoration:none;
+}
+
+#string {
+    width: 100%;
+    height: 30%;
+    padding: 9px 15px;
+    margin: 8px 0px 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid ;
+
+}
+
+#quote{
+    font-size:80%;
+    color:#515151;
+}
+
+#comment{
+    width: 50%;
+    height: 20%;
+    padding: 5px 10px;
+    margin: 0px 0px 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid ;
+}
+
+
+select#soflow, select#soflow-color {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 0px;
+   overflow: hidden;
+   padding: 3px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   margin:0px 30px 0px 0px;
+
+}
+
+.language_button select{
+    width:150px;
+}
+
+.category_button select{
+    width:300px;
+
+}
+
+.usage select{
+width:110%;
+}
+
+.domain select{
+width:145%;
+
+}
+
+.usage{
+float:right;
+margin:-136px 50% 0px 0px;
+
+}
+
+.domain{
+float:right;
+margin:-70px 54% 0px 0px;
+
+}
+
+#upload{
+float:right;
+width:27%;
+margin: -150px 16% 0px 0%;
+}
+
+#upload1{
+float:right;
+margin: -100px 10% 0px 0%;
+}
+
+#fsubmit{
+float:right;
+margin: -150px 0% 0px 0%;
+
+}
+
+
+#signup{
+margin-top:-30px;
+}
+
+input[type=button]{
+height:30px;
+width:150px;
+float:right;
+background-color:#999;
+}
+
+input[type=submit]{
+height:30px;
+width:90px;
+
+}
+
+
+.bottom input[type=button]{
+margin:0px 0px -20px 0px;
+}
+
+#comment{
+margin:0px 5px 0px 65px;
+}
+
+
+.tagline h2{
+    color:#990000;
+
+}
+
+.services{
+    background-color: #ffe680;
+    padding: 20px;
+        box-shadow: 6px 6px 5px #888888;
+
+}
+
+#io_box p{
+    font-size:80%;
+    display:inline;
+}
+
+.language_button{
+    display:inline;
+}
+
+.category_button{
+    display:inline;
+}
+
+p#rate{
+font-size:100%;
+}
+
+#postman{
+position:inline-block;
+}
+
+#signup{
+position:inline-block;
+
+}
+
+
+#blue {
+font-size:72%;
+color:#005;
+}
+
+
+/*VERTICAL MENU*/
+nav.vertical{
+  position:relative;
+  width:150px;
+}
+
+ul#inner{
+  width:510px;
+}
+
+a#outer{
+  padding:29px;
+
+}
+
+/* ALL UL */
+nav.vertical ul{
+  list-style: none;
+}
+/* ALL LI */
+nav.vertical li{
+  position:relative;
+    margin: 0px -40px;
+}
+/* ALL A */
+nav.vertical a{
+  display:block;
+  color:#eee;
+  text-decoration:none;
+  padding:14px 15px;
+  background:#667;
+  transition:0.2s;
+}
+/* ALL A HOVER */
+nav.vertical li:hover > a{
+  background:#778;
+}
+
+/* INNER UL HIDE */
+nav.vertical ul ul{
+  position:absolute;
+  left:0%;
+  top:0;
+  width:100%;
+  visibility:hidden;
+  opacity:0;
+  transition: transform 0.2s;
+  transform: translateX(50px);
+}
+/* INNER UL SHOW */
+nav.vertical li:hover > ul{
+  left:100%;
+  visibility:visible;
+  opacity:1;
+  transform: translateX(0px);
+}
+
+
+#letus{
+    float:right;
+    margin:10px 0px 0px 0px;
+    padding:1px 2px 1px 1px;
+
+}
+
+
+
+#block_left_p{
+    width:45%;
+    text-align: justify;
+    display:inline;
+    float:left;
+}
+
+#block_right_p{
+    width:45%;
+    text-align: justify;
+    float:right;
+    display:inline;
+}
+
+
+#search {
+    width: 25%;
+    height: 10%;
+    padding: 4px 10px;
+    margin: 8px 0px 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid ;
+
+}
+

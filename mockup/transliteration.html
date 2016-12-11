@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reverie Language Technology</title>
+
+        <link rel="stylesheet" type="text/css" href="transliteration_styles.css" />
+                <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+
+    </head>
+    <body>
+
+        <div class="tagline">
+            <h2>Reverie Transliteration</h2>
+
+        <p>
+             Padhein wahi shabd aasaani se. पढ़ें वही शब्द आसानी से.<br/>
+            मेक योर टेक्स्ट रीड मोर ईजिली रीडॅब्ल. Make your text read more easily readable.
+        </p>
+        </div>
+
+        <div class = "services">
+            <ul>
+                <li> Benchmarked at 50-100% better for Indian Names, Addresses, Brandnames </li>
+                <li> Supports transliteration from English to 12 Indian languages </li>
+                <li> Recognizes and leaves untouched URLs, Coupon/Product codes, etc. </li>
+                <li> Supports custom dictionaries handling (coming soon..) </li>
+            </ul>
+
+        </div>
+
+        <div class="try">
+            <h2>Try out transliteration for yourself</h2>
+
+            <!-- text selection block -->
+        </div>
+        <div class="block">
+
+            <nav class="vertical">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" id="outer">Indian Names & Addresses</a>
+
+                        <ul id="inner">
+                            <li>
+                                <a href="#">Sameer Shisodia, C 208, Redwoods, Sarjapura Road, Bangalore 560102</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Debasis Sundhararajan; Bannerghatta Road, Next to Marble Centre </a>
+                            </li>
+                            <li>
+                                <a href="#">Naveen Tikaram; 8th Main,4th Block, Koramangala, Bangalore</a>
+                            </li>
+                            <li>
+                                <a href="#">Amrish Ilyas; Sri Muneswara Estate, Above Vijaya Bank, Opposite Wipro Pillar Number 33, Tumkur Road</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Sneha; 1’B’ Main Road, 7th Block, Koramangala</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#" id="outer">Brand Names</a>
+                        <ul id="inner">
+                            <li>
+                                <a href="#"> Samsung Galaxy Note 7 </a>
+                            </li>
+
+                            <li>
+                                <a href="#"> Puma ZigZag Running Black Shoes </a>
+                            </li>
+
+                            <li>
+                                <a href="#"> Lenovo Ideapad Y900 17" </a>
+                            </li>
+
+                            <li>
+                                <a href="#"> Nike Black SIGNAL TEE  </a>
+                            </li>
+
+                            <li>
+                                <a href="#"> Himalaya Herbals Protein Hair Cream </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="" id="outer">Free Text (beta)</a>
+                        <ul id="inner">
+                            <li>
+                                <a href="#">Aapsey milkar khushi huee!</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Mujhey Hindi bhaashaa acchee lagtee hai. </a>
+                            </li>
+
+                            <li>
+                                <a href="#">Kya mein aapki madad kar sakta hoon?</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Seedhey jaaey! Phir baae, phir dae mudiye</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Kyaa aap ko yahaan accha lagtaa hai?</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <div id="io_box">
+
+            <form action="" method="get" >
+
+                <input placeholder="Enter String..." type="text" class="paste" name="search" id="search" value="" />
+                    <div id="quote">
+                        (enter any random text to try free text transliteration for any string [beta])
+                    </div>
+                <br/>
+                <div class="language_button">
+                    <select name = "language" id="soflow">
+                        <option value="hindi">Hindi</option>
+                        <option value="assamese">Assamese</option>
+                        <option value="bengali">Bengali</option>
+                        <option value="gujarati">Gujarati</option>
+                        <option value="kannada">Kannada</option>
+                        <option value="malayalam">Malayalam</option>
+                        <option value="marathi">Marathi</option>
+                        <option value="odia">Odia</option>
+                        <option value="punjabi">Punjabi</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="telugu">Telugu</option>
+
+                    </select>
+                </div>
+
+                <div class="category_button">
+                    <select name = "category" id="soflow">
+                        <option value="names">Indian Names & Addresses </option>
+                        <option value="festive">Brandnames</option>
+                        <option value="custom">Free Text (beta)</option>
+                    </select>
+                </div>
+
+                <input type="button" value="Try it!" name="tryit" class="try">
+            </form>
+            <br/>
+            <div class="output_block">
+                <div id="blue"><b>
+                    The Transliterated String the API will return :</b>
+                </div>
+                <input placeholder="Output will display here" type="text" name="output" id="search" value="" />
+
+            </div>
+
+            <div id="output">
+                <!-- print output here -->
+            </div>
+            <br/>
+            <div id="feedback">
+                <p id="rate">
+                    Rate It:
+                </p>
+                <img src="star.jpg" height="30" width="130" />
+                <input placeholder="Please leave us comments, suggestions, ideas" type="text" name="comment" id="comment" value="" />
+                <input type="submit" id="letus" value ="Let us know" name="know" />
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <p id="blue"><b>The Transliteration API for the above :</b></p>
+            <textarea name="Text1" cols="70" rows="4" placeholder="  Plugin API code here"></textarea>
+
+            <a href="#">
+                <input type="button" name="postman" id="postman" value="Try on Postman" />
+            </a>
+            <br/>
+            <a href="#">
+                <input type="button" name="signup" id="signup" value="Signup and Try! " />
+            </a>
+        </div>
+
+    </body>
+</html>
